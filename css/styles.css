@@ -1,0 +1,29 @@
+/* Головна сторінка сайту */
+
+    /* Підключення кольорів текстів (через змінні) */
+
+        :root {
+
+            --basic-blue-text-color:
+            --basic-black-text-color:
+            --full-black-text-color:
+            --basic-gray-text-color:
+            --full-white-text-color:
+            --additional-white-text-color:
+           
+            }
+
+    /* Загальні властивості */
+
+        .body {
+
+            background-color: var();
+
+            color:;
+            font-family: ;
+            letter-spacing: ;
+            font-size: ;
+            line-height: ;
+
+            }
+
