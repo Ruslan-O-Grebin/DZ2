@@ -1,29 +1,52 @@
 /* Головна сторінка сайту */
 
-    /* Підключення кольорів текстів (через змінні) */
+    /* Підключення кольорів тексту та фону (через змінні) */
 
         :root {
+            --full-black-color:#000000;
+            --full-white-color:#FFFFFF;
+            
+            --basic-blue-color:#2196F3;
+            --basic-black-color:#212121;
+            --basic-gray-color:#757575;
 
-            --basic-blue-text-color:
-            --basic-black-text-color:
-            --full-black-text-color:
-            --basic-gray-text-color:
-            --full-white-text-color:
-            --additional-white-text-color:
-           
+            --additional-gray-color:#2F303A;
+            --additional-white-color:rgba(255, 255, 255, 0.6);          
             }
 
     /* Загальні властивості */
-
-        .body {
-
-            background-color: var();
-
+            
+        body {
+            background-color: var(--full-white-color);
+        
             color:;
             font-family: ;
             letter-spacing: ;
             font-size: ;
             line-height: ;
-
             }
 
+        .list {
+            list-style: none;
+            }
+
+    /* Властивості елементів сторінки */
+        
+        /* Шапка з основними посиланнями*/
+        
+            /* Логотип */
+
+            .logo {
+                text-decoration: none;
+                color: var(--full-black-color);
+                }
+
+            .add-logo {
+                    color: var(--basic-blue-color);
+                    }
+
+            /* Вкладки  */
+
+            
+
+            /* Адресні дані */
