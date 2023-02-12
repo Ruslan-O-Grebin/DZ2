@@ -1,4 +1,4 @@
-/* Головна сторінка сайту */
+/* Спільна частина всіх сторінок сайту */
 
     /* Підключення кольорів тексту та фону (через змінні) */
 
@@ -11,26 +11,48 @@
             --basic-gray-color:#757575;
 
             --additional-gray-color:#2F303A;
-            --additional-white-color:rgba(255, 255, 255, 0.6);          
+            --additional-white-color:rgba(255, 255, 255, 0.6);
+            --additional-blue-color:#188CE8;  
+            --additional-purple-color:#800080;        
             }
 
-    /* Загальні властивості */
+    /* Загальні властивості об'єктів*/
             
         body {
             background-color: var(--full-white-color);
-        
-            color:;
-            font-family: ;
-            letter-spacing: ;
-            font-size: ;
-            line-height: ;
+            color: var(--basic-black-color);
+
+            font-family:'Roboto';
+            letter-spacing:0.03em;
+            font-size:14px;
+            line-height:1.6;
             }
 
         .list {
             list-style: none;
             }
 
-    /* Властивості елементів сторінки */
+        .button {
+                background-color: var(--basic-blue-color);
+                color: var(--full-white-color);
+
+                width: 220px;
+                height:50px;
+
+                padding: 10px 32px;
+                border: none ;
+                border-radius: 4px;
+                }
+
+        .button:hover {
+                    background-color:var(--additional-blue-color)
+                     }
+
+        .section-title {
+                    color:var(--basic-black-color);
+                    }
+
+/* Головна сторінка сайту (Студія) */
         
         /* Шапка з основними посиланнями*/
         
@@ -47,6 +69,62 @@
 
             /* Вкладки  */
 
-            
+            .site-nav .link:hover,
+            .site-nav .link:focus {
+                            color: var(--basic-blue-color);
+                             }
 
-            /* Адресні дані */
+            .site-nav .link {
+                        text-decoration: none;
+                        color: var(--basic-black-color);
+                         }                
+           
+            .site-nav .link.current {
+                                color: var(--basic-blue-color);
+                                }
+
+            .site-nav .link.current:hover {
+                                    color: var(--additional-purple-color);
+                                        }
+
+            /* Авторизація */
+
+            .auth-nav .link:hover,
+            .auth-nav .link:focus {
+                            color:var(--basic-blue-color);
+                        }
+
+            .auth-nav .link {
+                        text-decoration: none;
+                        color: var(--basic-gray-color);
+                            }   
+                            
+        /* Основний банер (Hero) */
+
+            .hero-title {
+                    background-color: var(--additional-gray-color);
+                    color: var(--full-white-color);
+                     }
+
+            .button.primary {
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 1.75;
+                        }
+
+        /* Блок - Особливості роботи компанії */
+            
+            .features-work {
+                        
+                        }
+            
+        /* Блок - Візуалізація роботи компанії */
+            
+            .visual {
+
+                    }
+        /* Блок  - Команда співробітників */
+
+        /* Підвал з адресними даними та посиланням */
+
+/* Додаткова сторінка сайту (Портфоліо) */
