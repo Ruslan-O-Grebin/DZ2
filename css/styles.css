@@ -22,10 +22,11 @@
             background-color: var(--full-white-color);
             color: var(--basic-black-color);
 
-            font-family:'Roboto';
-            letter-spacing:0.03em;
-            font-size:14px;
-            line-height:1.6;
+            font-family:'Roboto', sans-serif;
+            letter-spacing: 0.03em;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.2;
             }
 
         .list {
@@ -37,7 +38,7 @@
                 color: var(--full-white-color);
 
                 width: 220px;
-                height:50px;
+                height: 50px;
 
                 padding: 10px 32px;
                 border: none ;
@@ -50,6 +51,11 @@
 
         .section-title {
                     color:var(--basic-black-color);
+                    
+                    font-weight: 700;
+                    font-size: 36px;
+                    
+                    text-align: center;                      
                     }
 
 /* Головна сторінка сайту (Студія) */
@@ -59,8 +65,13 @@
             /* Логотип */
 
             .logo {
-                text-decoration: none;
                 color: var(--full-black-color);
+               
+                text-decoration: none;
+                
+                font-family: 'Raleway';
+                font-weight: 700;
+                font-size: 26px;
                 }
 
             .add-logo {
@@ -77,6 +88,8 @@
             .site-nav .link {
                         text-decoration: none;
                         color: var(--basic-black-color);
+
+                        font-weight: 500;
                          }                
            
             .site-nav .link.current {
@@ -97,26 +110,53 @@
             .auth-nav .link {
                         text-decoration: none;
                         color: var(--basic-gray-color);
+
+                        font-weight: 500;
                             }   
                             
         /* Основний банер (Hero) */
 
+            .hero {
+                 background-color: var(--additional-gray-color);
+                 }
+
             .hero-title {
-                    background-color: var(--additional-gray-color);
                     color: var(--full-white-color);
+                    
+                    font-weight: 900;
+                    font-size: 44px;
+                    line-height: 1.35;                               
+                    letter-spacing:0.06em;
+
+                    text-align: center; 
+                    text-transform: uppercase;
                      }
 
             .button.primary {
+                        font-family: 'Roboto';
                         font-size: 16px;
                         font-weight: 700;
-                        line-height: 1.75;
+                        line-height: 1.5;
+                        letter-spacing: 0.06em;
+
+                        display: flex;
+                        align-items: center;
+                        text-align: center;  
                         }
 
         /* Блок - Особливості роботи компанії */
             
-            .features-work {
-                        
+            .features-work h3 {
+                            font-size: 14px;
+                            
+                            text-transform: uppercase;
                         }
+
+            .features-work p {
+                            color: var(--basic-gray-color);
+
+                            line-height: 1.5;
+                            } 
             
         /* Блок - Візуалізація роботи компанії */
             
@@ -124,7 +164,55 @@
 
                     }
         /* Блок  - Команда співробітників */
+            
+            .team h3 {
+                    font-weight: 500;
+                    font-size: 16px;
+                                
+                    text-align: center;
+                    }
+
+            .team p {
+                    color: var(--basic-gray-color);
+                    
+                    font-size: 16px;
+                                    
+                    text-align: center;
+                    }
 
         /* Підвал з адресними даними та посиланням */
+                 
+        .footer {
+                background-color: var(--additional-gray-color);
+                }
 
+            /* Логотип (дублювання)  */
+
+            .footer .logo {
+                        color: var(--full-white-color); 
+                         }
+
+            /* Адреса */
+
+            .address {
+                     font-style: normal;
+                    }
+
+            .address-item .link:hover,
+            .address-item .link:focus {
+                                color: var(--basic-blue-color);
+                                }
+
+            .address-item .link {
+                            text-decoration: none;
+                            color: var(--additional-white-color);
+                            }                
+
+                /* Геодані */
+
+                .address .geo-date {
+                            color: var(--full-white-color);
+                             }
+
+            
 /* Додаткова сторінка сайту (Портфоліо) */
