@@ -10,10 +10,12 @@
             --basic-black-color:#212121;
             --basic-gray-color:#757575;
 
-            --additional-gray-color:#2F303A;
+            --additional-background-gray-color:#2F303A;
+            --additional-button-gray-color:#F5F4FA;
             --additional-white-color:rgba(255, 255, 255, 0.6);
             --additional-blue-color:#188CE8;  
-            --additional-purple-color:#800080;        
+            --additional-purple-color:#800080;   
+
             }
 
     /* Загальні властивості об'єктів*/
@@ -117,7 +119,7 @@
         /* Основний банер (Hero) */
 
             .hero {
-                 background-color: var(--additional-gray-color);
+                 background-color: var(--additional-background-gray-color);
                  }
 
             .hero-title {
@@ -142,6 +144,8 @@
                         display: flex;
                         align-items: center;
                         text-align: center;  
+
+                        cursor: pointer;
                         }
 
         /* Блок - Особливості роботи компанії */
@@ -183,7 +187,7 @@
         /* Підвал з адресними даними та посиланням */
                  
         .footer {
-                background-color: var(--additional-gray-color);
+                background-color: var(--additional-background-gray-color);
                 }
 
             /* Логотип (дублювання)  */
@@ -216,3 +220,73 @@
 
             
 /* Додаткова сторінка сайту (Портфоліо) */
+
+    /* Основне поле */
+    
+        /* Фільтр робіт */
+
+        .button-filter {
+            background-color: var(--additional-button-gray-color);
+            color: var(--basic-black-color);
+
+            width: fit-content;
+            height: 40px;
+            padding: 8px 25px;
+            border: none ;
+            border-radius: 4px;
+
+            font-family: 'Roboto';
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: 0.06em;
+
+            display: flex;
+            align-items: center;
+            text-align: center;  
+
+            cursor: pointer;
+            }
+
+        .button-filter:hover,
+        .button-filter:focus {
+                        background-color: var(--basic-blue-color);
+                        color: var(--full-white-color);
+                            }
+
+        .button-filter.current {
+                        background-color: var(--basic-blue-color);
+                        color: var(--full-white-color);
+                            }
+
+        .button-filter.current:hover {
+                                background-color: var(--additional-blue-color);
+                                color: var(--additional-purple-color);
+                                    }
+
+        /* Макети робіт */
+
+        .exampel h3 {
+                    color:var(--basic-black-color);
+
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 1.5;
+                    letter-spacing: 0.06em;
+                    }
+
+        .exampel p {
+                color:var(--basic-gray-color);    
+                
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1.5;
+                letter-spacing: 0.03em;
+                }
+
+        .exampel .descr {
+                    background-color: var(--basic-blue-color);
+                    color: var(--full-white-color);
+
+                    font-size: 18px;
+                    }
