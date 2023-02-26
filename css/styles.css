@@ -47,7 +47,8 @@
                 border-radius: 4px;
                 }
 
-        .button:hover {
+        .button:hover,
+        .button:focus {
                     background-color:var(--additional-blue-color)
                      }
 
@@ -97,10 +98,6 @@
             .site-nav .link.current {
                                 color: var(--basic-blue-color);
                                 }
-
-            .site-nav .link.current:hover {
-                                    color: var(--additional-purple-color);
-                                        }
 
             /* Авторизація */
 
@@ -164,9 +161,6 @@
             
         /* Блок - Візуалізація роботи компанії */
             
-            .visual {
-
-                    }
         /* Блок  - Команда співробітників */
             
             .team h3 {
@@ -261,7 +255,6 @@
 
         .button-filter.current:hover {
                                 background-color: var(--additional-blue-color);
-                                color: var(--additional-purple-color);
                                     }
 
         /* Макети робіт */
