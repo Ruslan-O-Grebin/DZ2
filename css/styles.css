@@ -20,6 +20,16 @@
 
     /* Загальні властивості об'єктів*/
             
+        html {
+            box-sizing: border-box;
+            }  
+            
+        *,
+        *::before,
+        *::after {
+                 box-sizing: inherit;
+                }
+
         body {
             background-color: var(--full-white-color);
             color: var(--basic-black-color);
@@ -31,19 +41,25 @@
             line-height: 1.2;
             }
 
+        .container {
+                    width: 1200px;
+                    padding: 15px;
+                 }
+
         .list {
             list-style: none;
+            padding: 0;
+            margin: 0;
             }
 
         .button {
                 background-color: var(--basic-blue-color);
                 color: var(--full-white-color);
 
-                width: 220px;
+                min-width: 220px;
                 height: 50px;
-
                 padding: 10px 32px;
-                border: none ;
+                border: 1px solid transparent;
                 border-radius: 4px;
                 }
 
@@ -52,19 +68,26 @@
                     background-color:var(--additional-blue-color)
                      }
 
+        .section {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }            
+
         .section-title {
                     color:var(--basic-black-color);
                     
                     font-weight: 700;
                     font-size: 36px;
                     
-                    text-align: center;                      
+                    text-align: center; 
+                    margin-top: 0; 
+                    margin-bottom: 50px;                    
                     }
 
 /* Головна сторінка сайту (Студія) */
         
         /* Шапка з основними посиланнями*/
-        
+
             /* Логотип */
 
             .logo {
@@ -82,6 +105,15 @@
                     }
 
             /* Вкладки  */
+
+            .site-nav {
+                        display: flex;
+                        
+                         }
+
+            .site-nav .item:not(:last-child) {
+                                            margin-right: 50px;
+                                            }
 
             .site-nav .link:hover,
             .site-nav .link:focus {
@@ -101,6 +133,14 @@
 
             /* Авторизація */
 
+            .auth-nav {
+                        display: flex;
+                        }
+
+            .auth-nav .item:not(:last-child)  {
+                                            margin-right: 50px;
+                                            }
+
             .auth-nav .link:hover,
             .auth-nav .link:focus {
                             color:var(--basic-blue-color);
@@ -117,7 +157,9 @@
 
             .hero {
                  background-color: var(--additional-background-gray-color);
-                 }
+                 
+                 text-align: center; 
+                }
 
             .hero-title {
                     color: var(--full-white-color);
@@ -126,9 +168,10 @@
                     font-size: 44px;
                     line-height: 1.35;                               
                     letter-spacing:0.06em;
-
-                    text-align: center; 
+                    
                     text-transform: uppercase;
+                    margin-top: 0;
+                    margin-bottom: 30px;
                      }
 
             .button.primary {
@@ -138,36 +181,55 @@
                         line-height: 1.5;
                         letter-spacing: 0.06em;
 
-                        display: flex;
-                        align-items: center;
-                        text-align: center;  
-
+                        display: inline-block;
                         cursor: pointer;
+                                 
                         }
 
         /* Блок - Особливості роботи компанії */
+            
+            .features-work {
+                            margin-bottom: 100px;
+                            }
             
             .features-work h3 {
                             font-size: 14px;
                             
                             text-transform: uppercase;
+                            margin-top: 0;
+                            margin-bottom: 12px;
                         }
 
             .features-work p {
                             color: var(--basic-gray-color);
 
                             line-height: 1.5;
+                            margin: 0;
                             } 
             
         /* Блок - Візуалізація роботи компанії */
-            
+           
+            .visual {
+                
+                    }    
+
         /* Блок  - Команда співробітників */
             
+            /* .team {
+                   display: flex; 
+                 }   */
+
+            .card-worker img {
+                             margin-bottom: 32px;
+                            } 
+
             .team h3 {
                     font-weight: 500;
                     font-size: 16px;
                                 
                     text-align: center;
+                    margin-top: 0;
+                    margin-bottom: 12px;
                     }
 
             .team p {
@@ -176,6 +238,7 @@
                     font-size: 16px;
                                     
                     text-align: center;
+                    margin: 0;
                     }
 
         /* Підвал з адресними даними та посиланням */
@@ -185,6 +248,10 @@
                 }
 
             /* Логотип (дублювання)  */
+            
+            /* .footer a {
+                         margin-bottom: 20px;
+                        } */
 
             .footer .logo {
                         color: var(--full-white-color); 
@@ -218,6 +285,11 @@
     /* Основне поле */
     
         /* Фільтр робіт */
+        
+        .filter {
+                display:flex;
+                justify-content: center;
+                }
 
         .button-filter {
             background-color: var(--additional-button-gray-color);
