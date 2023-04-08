@@ -11,7 +11,7 @@
             --basic-gray-color:#757575;
 
             --additional-background-gray-color:#2F303A;
-            --additional-button-gray-color:#F5F4FA;
+            --additional-gray-color:#F5F4FA;
             --additional-white-color:rgba(255, 255, 255, 0.6);
             --additional-blue-color:#188CE8;  
             --additional-purple-color:#800080;   
@@ -43,7 +43,8 @@
 
         .container {
                     width: 1200px;
-                    padding: 15px;
+                    padding: 0 15px;
+                    margin: 0 auto;
                  }
 
         .list {
@@ -69,9 +70,8 @@
                      }
 
         .section {
-            padding-top: 100px;
-            padding-bottom: 100px;
-        }            
+                padding-bottom: 100px;
+                }            
 
         .section-title {
                     color:var(--basic-black-color);
@@ -88,16 +88,27 @@
         
         /* Шапка з основними посиланнями*/
 
+        .hat {
+            display: flex;
+            align-items: center;
+
+            height: 80px;
+            }
+
+        .nav-site {
+                 display: flex;
+                    }
+
             /* Логотип */
 
             .logo {
                 color: var(--full-black-color);
                
                 text-decoration: none;
-                
                 font-family: 'Raleway';
                 font-weight: 700;
                 font-size: 26px;
+
                 }
 
             .add-logo {
@@ -108,7 +119,8 @@
 
             .site-nav {
                         display: flex;
-                        
+                        margin-left: 100px;
+                        align-items: center;
                          }
 
             .site-nav .item:not(:last-child) {
@@ -125,6 +137,8 @@
                         color: var(--basic-black-color);
 
                         font-weight: 500;
+
+                        padding: 10px 0;
                          }                
            
             .site-nav .link.current {
@@ -135,22 +149,26 @@
 
             .auth-nav {
                         display: flex;
+                        margin-left: auto;
                         }
-
+                        
+            
             .auth-nav .item:not(:last-child)  {
                                             margin-right: 50px;
                                             }
 
             .auth-nav .link:hover,
             .auth-nav .link:focus {
-                            color:var(--basic-blue-color);
-                        }
+                                color:var(--basic-blue-color);
+                                 }
 
             .auth-nav .link {
-                        text-decoration: none;
-                        color: var(--basic-gray-color);
+                            text-decoration: none;
+                            color: var(--basic-gray-color);
 
-                        font-weight: 500;
+                            font-weight: 500;
+
+                            padding: 10px 0;
                             }   
                             
         /* Основний банер (Hero) */
@@ -159,6 +177,7 @@
                  background-color: var(--additional-background-gray-color);
                  
                  text-align: center; 
+                 padding: 200px 0;
                 }
 
             .hero-title {
@@ -188,9 +207,19 @@
 
         /* Блок - Особливості роботи компанії */
             
+            .hidden {
+                    display: none;
+                    }
+
             .features-work {
-                            margin-bottom: 100px;
+                            display: flex;
+
+                            margin-top: 100px;
                             }
+
+            .features-work .item:not(:last-child) {
+                                                margin-right: 30px;
+                                                }
             
             .features-work h3 {
                             font-size: 14px;
@@ -210,15 +239,37 @@
         /* Блок - Візуалізація роботи компанії */
            
             .visual {
-                
-                    }    
+                    display:flex;
+                    } 
+                    
+            .visual .item:not(:last-child) {
+                                        margin-right: 27px;
+                                        }
 
         /* Блок  - Команда співробітників */
-            
-            /* .team {
-                   display: flex; 
-                 }   */
+                                        
+            .section-team {
+                        background-color: var(--additional-gray-color);
+                        padding-top: 100px;
+                    }
 
+            .team {
+                   display: flex;
+                   justify-content: center; 
+                 }  
+            
+            .card-worker {
+                        background-color: var(--full-white-color);
+
+                        padding-bottom: 30px;
+
+                        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.12), 0px 10px 10px rgba(0, 0, 0, 0.14), 0px 20px 10px rgba(0, 0, 0, 0.2);
+                        border-radius: 0px 0px 4px 4px;
+                        }   
+
+            .card-worker:not(:last-child) {
+                                        margin-right: 30px;
+                                        }
             .card-worker img {
                              margin-bottom: 32px;
                             } 
@@ -245,17 +296,19 @@
                  
         .footer {
                 background-color: var(--additional-background-gray-color);
+                
+                padding-top: 60px;
+                padding-bottom: 60px;
                 }
 
             /* Логотип (дублювання)  */
             
-            /* .footer a {
-                         margin-bottom: 20px;
-                        } */
-
             .footer .logo {
                         color: var(--full-white-color); 
-                         }
+                        
+                        display: inline-block;
+                        margin-bottom: 20px; 
+                        }
 
             /* Адреса */
 
@@ -271,7 +324,11 @@
             .address-item .link {
                             text-decoration: none;
                             color: var(--additional-white-color);
-                            }                
+                            }  
+
+            .address-item > li:not(:last-child) {
+                                            margin-bottom: 12px;
+                                            }
 
                 /* Геодані */
 
@@ -288,11 +345,18 @@
         
         .filter {
                 display:flex;
-                justify-content: center;
+                justify-content: center; 
+                
+                margin-top: 100px;
+                margin-bottom: 50px;
                 }
 
+        .filter .item:not(:last-child) {
+                                    margin-right: 8px;
+                                    }           
+
         .button-filter {
-            background-color: var(--additional-button-gray-color);
+            background-color: var(--additional-gray-color);
             color: var(--basic-black-color);
 
             width: fit-content;
@@ -331,6 +395,28 @@
 
         /* Макети робіт */
 
+        .layouts-works {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+
+                    margin-bottom: 100px;
+                    }
+
+        .exampel {
+                width: calc( ( 100% - 60px ) / 3 );
+                border: 1px solid #EEEEEE;
+                
+                }   
+                
+               .exampel:not(:nth-child(3n)) {
+                                    margin-right: 30px;
+                                     }
+
+        .exampel:not(:nth-last-child(-n+3)) {
+                                    margin-bottom: 30px;
+                                    }
+
         .exampel h3 {
                     color:var(--basic-black-color);
 
@@ -338,6 +424,8 @@
                     font-size: 18px;
                     line-height: 1.5;
                     letter-spacing: 0.06em;
+
+                    margin: 20px 24px 4px 24px;
                     }
 
         .exampel p {
@@ -347,6 +435,8 @@
                 font-size: 16px;
                 line-height: 1.5;
                 letter-spacing: 0.03em;
+
+                margin: 0 24px 20px 24px;
                 }
 
         .exampel .descr {
